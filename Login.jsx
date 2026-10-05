@@ -1,29 +1,41 @@
-import "./Login.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
   return (
-    <div className="login-page">
-      <div className="login-box">
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-5">
 
-        <h1>Shop Management System</h1>
-        <h2>Login</h2>
+          <div className="card p-4 shadow">
+            <h2 className="text-center mb-4">Login</h2>
 
-        <form>
-          <label>Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-          />
+            <form>
+              <div className="mb-3">
+                <label className="form-label">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
 
-          <label>Password</label>
-          <input
-            type="password"
-            placeholder="Enter your password"
-          />
+              <div className="mb-3">
+                <label className="form-label">Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Enter your password"
+                />
+              </div>
 
-          <button type="submit">Login</button>
-        </form>
+              <button type="submit" className="btn btn-primary w-100">
+                Login
+              </button>
+            </form>
 
+          </div>
+
+        </div>
       </div>
     </div>
   );
